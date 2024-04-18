@@ -37,10 +37,6 @@ const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
   {
-    resolve: `@medusajs/file-local`,
-    options: {
-      upload_dir: "uploads",
-    },
     resolve: `medusa-file-minio`,
     options: {
         endpoint: process.env.MINIO_ENDPOINT,
